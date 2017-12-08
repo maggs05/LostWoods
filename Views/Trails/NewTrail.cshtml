@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    @model LostWoods.Models.Trails
+    <h1>Add A New Trail</h1>
+    <form asp-action="Add" asp-controller="Trails" method="post">
+        <span asp-validation-for"Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+
+        <span asp-validation-for="Description"></span>
+        <label asp-for="Description"></label>
+        <input asp-for="Description">
+
+        <span asp-validation-for="TrailLength"></span>
+        <label asp-for="TrailLength"></label>
+        <input asp-for="TrailLength">
+
+        <span asp-validation-for="Elevation"></span>
+        <label asp-for="Elevation"></label>
+        <input asp-for="Elevation">
+
+        <span asp-validation-for="LongLat"></span>
+        <label asp-for="LongLat"></label>
+        <input asp-for="Longitde">
+        <input asp-for="Latitude">
+
+    </form>
+</body>
+</html>
