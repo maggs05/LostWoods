@@ -10,7 +10,7 @@
     @model LostWoods.Models.Trails
     <h1>Add A New Trail</h1>
     <form asp-action="Add" asp-controller="Trails" method="post">
-        <span asp-validation-for"Name"></span>
+        <span asp-validation-for="Name"></span>
         <label asp-for="Name"></label>
         <input asp-for="Name">
 
@@ -28,8 +28,8 @@
 
         <span asp-validation-for="LongLat"></span>
         <label asp-for="LongLat"></label>
-        <input asp-for="Longitde">
-        <input asp-for="Latitude">
+        <input asp-for="LongLat">
+        
 
     </form>
 </body>
